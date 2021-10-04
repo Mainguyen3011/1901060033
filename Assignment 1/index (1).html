@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login or Signup</title>
+    <style>
+      body {background-color: #eeeff4;
+      
+      }
+
+        h2 { 
+   margin-top: 100px;
+  font-size: 30px; 
+  line-height:5px; 
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 450px;
+    }
+    .loginheader { 
+    height: 10px; 
+    font-weight:normal;
+    line-height: 0px;
+    
+}
+.title { 
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+  line-height:0px; 
+  font-weight:normal; 
+  text-align:left; 
+  font-size:16px; 
+  padding-left: 450px;
+}
+.loginform { 
+margin: 10px auto; text-align: left; 
+padding-left: 450px;
+padding-top: 0px;
+}
+.loginbox button {
+  padding: 5px 10px; 
+  font-size: 16px; 
+  letter-spacing: 1px; color: #fff; width: 160px; height: 30px;
+  line-height:15px; font-family:  'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border: 1px solid #006117;
+  outline: none;
+  background: linear-gradient(#6fad5a, #66a150, #60974C);
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  
+}
+
+ .loginbox p { margin: 7px 0 5px 0; }
+ 
+ .loginbox input.mini { width:127px; }
+ 
+.loginbox input {
+  padding: 10px 10px; 
+  color: #ccc;
+  font-family: Arial, Helvetica, sans-serif; 
+  margin-top: 8px; 
+  font-size: 12px; 
+  font-weight: bold;
+  border: 1px solid #ccc; 
+  width: 280px; 
+  height: 10px; 
+  outline: none;
+}
+.loginbox { width: 10px auto; 
+    margin: 10px; 
+       
+}
+.birthday{
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding-top: 5px;
+}
+
+.birth_date{
+    text-align: left;
+    margin-top: 5px;
+    
+}
+.brth_hint{
+    font-size: 11px;
+    padding-left: 170px;
+    padding-top: 0px;
+    width: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:#6774a1;
+    text-align: left;
+
+}
+.agreement{
+    margin-top: 15px;
+    font-size: 11px;
+    width: 300px;
+    color: grey;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.month,
+.day,
+.year
+{height: 28px;
+margin-left: 0px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+}
+
+ 
+    </style>
+</head>
+<body>
+      <div class="loginbox radius">
+        <h2 style="color:#141823; text-align:left;"><b></b>Sign Up</b></h2>
+        <div class="loginboxinner radius">
+          <div class="loginheader">
+            <h5 class="title">It's free and always will be.</h5>
+          </div>
+          <div class="loginform">
+            <form id="login" action="" method="post">
+              <p>
+                <input type="text" id="firstname" name="firstname" placeholder="First Name" value="" class="radius mini" />
+                <input type="text" id="lastname" name="lastname" placeholder="Last Name" value="" class="radius mini" />
+              </p>
+              <p>
+                <input type="text" id="email" name="email" placeholder="Your Email" value="" class="radius" />
+              </p>
+              <p>
+                <input type="text" id="remail" name="remail" placeholder="Re-enter Email" class="radius" />
+              </p>
+              <p>
+                <input type="password" id="password" name="password" placeholder="New Password" class="radius" />
+              </p>
+              <p class="birthday">Birthday</p>
+      <div class="birth_date">
+       <select class="month">
+         <option>Month</option><option>Jan</option><option>Feb</option><option>Mar</option>
+         <option>Apr</option><option>May</option><option>Jun</option><option>Jul</option>
+         <option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option>
+         <option>Dec</option>
+       </select>
+
+       <select class="day">
+         <option>Day</option><option>1</option><option>2</option><option>3</option>
+         <option>4</option><option>5</option><option>6</option><option>7</option>
+         <option>8</option><option>9</option><option>10</option><option>11</option>
+         <option>12</option><option>13</option><option>14</option><option>15</option>
+         <option>16</option><option>17</option><option>18</option><option>19</option>
+         <option>20</option><option>21</option><option>22</option><option>23</option>
+         <option>24</option><option>25</option><option>26</option><option>27</option>
+         <option>28</option><option>29</option><option>30</option>
+       </select>
+
+       <select class="year">
+         <option>Year</option><option>1970</option><option>1972</option><option>1974</option>
+         <option>1976</option><option>1978</option><option>1980</option><option>1982</option>
+         <option>1984</option><option>1986</option><option>1988</option><option>1990</option>
+         <option>1992</option><option>1995</option><option>1997</option><option>2000</option>
+         <option>2002</option><option>2003</option><option>2004</option><option>2005</option>
+         <option>2006</option><option>2007</option><option>2008</option>
+       </select>
+       <p class="brth_hint"> <a href="#">Why do i need to provide my birthday?</a></p>
+
+   <div class="gender-selection">
+    <input type="radio" id="r-b" name="gender" value="female"/>Female
+    <input type="radio" id="r-b" name="gender" value="male"/>Male<br>
+</div>
+
+      <p class="agreement">By clicking Sign Up, you agree to our <a href="#">Terms</a> and that you have read our <a href="#">Data Use Policy</a>, including our <a href="#">Cookie Use.</a> </p>
+              <p>
+                <button class="radius title" name="signup">Sign Up </button>
+              </p>
+            </form>
+           </div>
+      </div>   
+</body>
+</html>
